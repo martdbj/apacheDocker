@@ -32,6 +32,6 @@ jobs:
           key: "${{ secrets.DEPLOY_SSH_KEY }}"
 
           script: |
-            cd /srv/apache-cicd
+            cd /srv/apacheDocker
             git pull origin main
             docker compose up -d --build
